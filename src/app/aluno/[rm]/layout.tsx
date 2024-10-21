@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import BarraLateral from "@/components/BarraLateral/BarraLateral";
 
 export const metadata: Metadata = {
     title: "Portifolio Estudantil",
@@ -15,7 +16,10 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
     return (
         <html lang="pt-br">
         <body>
-            {children}
+            <BarraLateral/>
+            <div>
+                {children}
+            </div>
         </body>
         </html>
     );
