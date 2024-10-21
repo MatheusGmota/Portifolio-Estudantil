@@ -6,3 +6,18 @@
 body {
   font-family: Noto Sans, sans-serif;
 }
+
+@layer components {
+  .barra-lateral{
+    @apply text-white bg-gray-900 w-72 min-h-screen p-5;
+  }
+  .wrapper-aluno{
+    @apply flex justify-center;
+    & .aluno{
+      @apply text-2xl flex flex-col items-center m-4;
+    }
+    & .dados{
+      @apply text-xl flex flex-col items-center m-2;
+    }
+  }
+}

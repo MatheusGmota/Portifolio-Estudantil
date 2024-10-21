@@ -1,20 +1,22 @@
 [
     {
       "rm": "98985",
+      "img": "",
       "nome": "Felipe Seiki Hashiguti",
       "turma": "1TDSPY",
       "curso": "Análise e Desenvolvimento de Sistemas"
     },
     {
       "rm": "555118",
+      "img": "",
       "nome": "Lucas Corradini Silveira",
       "turma": "1TDSPY",
       "curso": "Análise e Desenvolvimento de Sistemas"
     },
     {
-      "idAluno": 3,
-      "nome": "Matheus Gregorio Mota",
       "rm": "557254",
+      "img": "",
+      "nome": "Matheus Gregorio Mota",
       "turma": "1TDSPY",
       "curso": "Análise e Desenvolvimento de Sistemas"
     }

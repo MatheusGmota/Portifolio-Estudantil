@@ -1,26 +1,12 @@
-import type { Metadata } from "next";
-import "./globals.css";
 import BarraLateral from "@/components/BarraLateral/BarraLateral";
 
-export const metadata: Metadata = {
-    title: "Portifolio Estudantil",
-    description: "Nesse portifolio, os alunos podem visualizar suas notas de maneira mais eficiente.",
-};
-
-export const viewport = {
-    width:'device-width', 
-    initialScale:1.0
-}
-
-export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
+export default function AlunoLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
     return (
-        <html lang="pt-br">
-        <body>
-            <BarraLateral/>
-            <div>
+        <div>
+            <BarraLateral />
+            <main>
                 {children}
-            </div>
-        </body>
-        </html>
+            </main>
+        </div>
     );
 }
