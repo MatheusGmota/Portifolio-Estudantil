@@ -1,15 +1,32 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { TipoAluno } from "@/types";
 import Image from 'next/image';
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 
 export default function BarraLateral() {
 
+    const {rm} = useParams();
+
     const [aluno, setAluno] = useState<TipoAluno>({
-        nome: 'Felipe Seiki', curso: 'Análise e Desenvolvimento de Sistemas', img: '/img/foto-felipe.jpg', rm: '98985', turma: '1TDSPY'
+        rm: "",
+        img: "",
+        nome: "",
+        turma: "",
+        curso: ""
     });
+
+    useEffect (() =>{
+        const chamadaApi = async()=>{
+            const response = await fetch(`http://localhost:3000/api/base-alunos/${rm}`);
+            const data = await response.json();
+            setAluno(data);
+            console.log(data + "sim")
+        }
+        chamadaApi();
+    },[rm])
 
     return (
         <div className='barra-lateral'>
@@ -17,7 +34,7 @@ export default function BarraLateral() {
                 <article>
                     <div className='aluno'>
                         <Image src={aluno.img} width={140} height={140} alt={`foto de ${aluno.nome}`} className='rounded-full m-2'/>
-                        <h3>
+                        <h3 className='text-center'>
                             {aluno.nome}
                         </h3>
                     </div>

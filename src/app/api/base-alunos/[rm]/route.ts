@@ -7,7 +7,7 @@ export async function GET(request: Request, { params }: { params: { rm: string }
     const file = await fs.readFile(process.cwd() + '/src/data/alunos.json', 'utf-8');
     const dados:TipoAluno[] = JSON.parse(file);
 
-    const produto = dados.find(a => a.rm == params.rm);
-
-    return NextResponse.json(produto);
+    const aluno = dados.find(a => a.rm == params.rm);
+    console.log(aluno)
+    return NextResponse.json(aluno);
 }
