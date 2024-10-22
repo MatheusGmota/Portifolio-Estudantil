@@ -29,9 +29,11 @@ export default function Provas({ params }: { params: {rm: string, avaliacao: str
             setProvas(data)
         }
         chamadaApi()
-        
+    },[params, navegacao])
+
+    useEffect(()=> {
         setSemestre(provas.filter((p) => p.semestre === botaoAtivo))
-    },[params, navegacao, provas, botaoAtivo])    
+    },[provas, botaoAtivo])
 
     return (
         <div className="flex flex-col justify-center items-center gap-6 w-auto">
