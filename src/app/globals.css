@@ -21,7 +21,7 @@ body {
 	}
 
 	.botao {
-		@apply font-bold text-sm rounded-lg bg-white text-black py-1 px-4 shadow-md  transition-all hover:text-white hover:bg-pink-600 hover:shadow-pink-900;
+		@apply font-semibold text-sm rounded-lg bg-white text-black py-1 px-4 shadow-md  transition-all hover:text-white hover:bg-pink-600 hover:shadow-pink-900;
 	}
 
 	.botao.ativo {

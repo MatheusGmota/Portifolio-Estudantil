@@ -20,7 +20,7 @@ export default function TabelaProvas( {provas} : {provas :TipoProva[]}) {
                     <td>{p.data}</td>
                     <td>{p.nota}</td>
                     <td>{p.feedback}</td>
-                    <td><Link className="hover:underline hover:text-pink-500" href={``}>Editar</Link></td>
+                    <td><Link className="text-pink-500 hover:underline hover:text-white" href={``}>Editar</Link></td>
                 </tr>
             ))}
         </tbody>
