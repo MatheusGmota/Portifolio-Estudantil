@@ -7,21 +7,16 @@ export type TipoAluno = {
 
 export type TipoNotas = {
     rm: string, 
-    disciplinas: TipoDisciplina[] 
+    provas: TipoProva[] 
 } 
-
-export type TipoDisciplina = {
-    disciplina: string,
-    checkpoints: TipoProva[],
-    gs: TipoProva[],
-    challenge: TipoProva[]
-}
 
 export type TipoProva = {
     idProva: number;
     semestre: number;
-    descricao: string;
-    data: string;
+    avaliacao: string;
+    disciplina: string;
     nota: number;
+    data: string;
     feedback: string;
+    descricao: string;
 }

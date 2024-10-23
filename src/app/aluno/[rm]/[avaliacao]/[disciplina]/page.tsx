@@ -35,9 +35,7 @@ export default function Provas({ params }: { params: {rm: string, avaliacao: str
         setSemestre(provas.filter((p) => p.semestre === botaoAtivo))
     },[provas, botaoAtivo])
 
-    useEffect(()=> {
-        setSemestre(provas.filter((p) => p.semestre === botaoAtivo))
-    },[provas, botaoAtivo])
+
     
     return (
         <div className="flex flex-col justify-center items-center gap-6 w-auto">

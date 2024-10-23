@@ -1,263 +1,147 @@
 [
     {
-      "rm": "98985",
-      "disciplinas": [
-        {
-          "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT",
-          "checkpoints": [
-            {"idProva": 1, "semestre":1, "nota": 0, "data": "", "feedback": " ", "descricao": ""},
-            {"idProva": 2, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 3, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ],
-          "gs": [{"idProva": 4, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}],
-          "challenge": [
-            {"idProva": 5, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 6, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ]
-        },
-        {
-          "disciplina": "COMPUTATIONAL THINKING USING PYTHON",
-          "checkpoints": [
-            {"idProva": 7, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 8, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 9, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ],
-          "gs": [{"idProva": 10, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}],
-          "challenge": [
-            {"idProva": 11, "semestre":1, "nota": 5.3, "data": "10/09/24", "feedback": "", "descricao": ""},
-            {"idProva": 12, "semestre":1, "nota": 10, "data": "2/10/24", "feedback": "", "descricao": ""}
-          ]
-        },
-        {
-          "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA",
-          "checkpoints": [
-            {"idProva": 13, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 14, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 15, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ],
-          "gs": [{"idProva": 16, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}],
-          "challenge": [
-            {"idProva": 17, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 18, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ]
-        },
-        {
-          "disciplina": "BUILDING RELATIONAL DATABASE",
-          "checkpoints": [
-            {"idProva": 19, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 20, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 21, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ],
-          "gs": [{"idProva": 22, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}],
-          "challenge": [
-            {"idProva": 23, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 24, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ]
-        },
-        {
-          "disciplina": "FRONT-END DESIGN ENGINEERING",
-          "checkpoints": [
-            {"idProva": 25, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 26, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 27, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ],
-          "gs": [{"idProva": 28, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}],
-          "challenge": [
-            {"idProva": 29, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 30, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ]
-        },
-        {
-          "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL",
-          "checkpoints": [
-            {"idProva": 31, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 32, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 33, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ],
-          "gs": [{"idProva": 34, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}],
-          "challenge": [
-            {"idProva": 35, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 36, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ]
-        }
-      ]
+        "rm": "551118",
+        "provas": [
+            {"idProva": 1, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 2, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 3, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 4, "semestre": 1, "avaliacao": "gs", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 5, "semestre": 1, "avaliacao": "challenge", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 6, "semestre": 1, "avaliacao": "challenge", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 7, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 8, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 9, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 10, "semestre": 1, "avaliacao": "gs", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 11, "semestre": 1, "avaliacao": "challenge", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 12, "semestre": 1, "avaliacao": "challenge", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 13, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 14, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 15, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 16, "semestre": 1, "avaliacao": "gs", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 17, "semestre": 1, "avaliacao": "challenge", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 18, "semestre": 1, "avaliacao": "challenge", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 19, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 20, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 21, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 22, "semestre": 1, "avaliacao": "gs", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 23, "semestre": 1, "avaliacao": "challenge", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 24, "semestre": 1, "avaliacao": "challenge", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 25, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 26, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 27, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 28, "semestre": 1, "avaliacao": "gs", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 29, "semestre": 1, "avaliacao": "challenge", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 30, "semestre": 1, "avaliacao": "challenge", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 31, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 32, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 33, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 34, "semestre": 1, "avaliacao": "gs", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 35, "semestre": 1, "avaliacao": "challenge", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+            {"idProva": 36, "semestre": 1, "avaliacao": "challenge", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 0, "data": "", "feedback": "", "descricao": "" }
+        ]
     },
     {
       "rm": "551118",
-      "disciplinas": [
-        {
-          "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT",
-          "checkpoints": [
-            {"idProva": 1, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 2, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 3, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ],
-          "gs": [{"idProva": 4, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}],
-          "challenge": [
-            {"idProva": 5, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 6, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ]
-        },
-        {
-          "disciplina": "COMPUTATIONAL THINKING USING PYTHON",
-          "checkpoints": [
-            {"idProva": 7, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 8, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 9, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ],
-          "gs": [{"idProva": 10, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}],
-          "challenge": [
-            {"idProva": 11, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 12, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ]
-        },
-        {
-          "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA",
-          "checkpoints": [
-            {"idProva": 13, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 14, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 15, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ],
-          "gs": [{"idProva": 16, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}],
-          "challenge": [
-            {"idProva": 17, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 18, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ]
-        },
-        {
-          "disciplina": "BUILDING RELATIONAL DATABASE",
-          "checkpoints": [
-            {"idProva": 19, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 20, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 21, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ],
-          "gs": [{"idProva": 22, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}],
-          "challenge": [
-            {"idProva": 23, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 24, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ]
-        },
-        {
-          "disciplina": "FRONT-END DESIGN ENGINEERING",
-          "checkpoints": [
-            {"idProva": 25, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 26, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 27, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ],
-          "gs": [{"idProva": 28, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}],
-          "challenge": [
-            {"idProva": 29, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 30, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ]
-        },
-        {
-          "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL",
-          "checkpoints": [
-            {"idProva": 31, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 32, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 33, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ],
-          "gs": [{"idProva": 34, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}],
-          "challenge": [
-            {"idProva": 35, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""},
-            {"idProva": 36, "semestre":1, "nota": 0, "data": "", "feedback": "", "descricao": ""}
-          ]
-        }
+      "provas": [
+        {"idProva": 1, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 2, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 3, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 4, "semestre": 1, "avaliacao": "gs", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 5, "semestre": 1, "avaliacao": "challenge", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 6, "semestre": 1, "avaliacao": "challenge", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 7, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 8, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 9, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 10, "semestre": 1, "avaliacao": "gs", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 11, "semestre": 1, "avaliacao": "challenge", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 12, "semestre": 1, "avaliacao": "challenge", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 13, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 14, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 15, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 16, "semestre": 1, "avaliacao": "gs", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 17, "semestre": 1, "avaliacao": "challenge", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 18, "semestre": 1, "avaliacao": "challenge", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 19, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 20, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 21, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 22, "semestre": 1, "avaliacao": "gs", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 23, "semestre": 1, "avaliacao": "challenge", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 24, "semestre": 1, "avaliacao": "challenge", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 25, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 26, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 27, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 28, "semestre": 1, "avaliacao": "gs", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 29, "semestre": 1, "avaliacao": "challenge", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 30, "semestre": 1, "avaliacao": "challenge", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 31, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 32, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 33, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 34, "semestre": 1, "avaliacao": "gs", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 35, "semestre": 1, "avaliacao": "challenge", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 0, "data": "", "feedback": "", "descricao": ""},
+        {"idProva": 36, "semestre": 1, "avaliacao": "challenge", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 0, "data": "", "feedback": "", "descricao": "" }
       ]
     },
     {
       "rm": "557254",
-      "disciplinas": [
-        {
-          "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT",
-          "checkpoints": [
-            {"idProva": 2, "semestre": 1, "nota": 5.4, "data": "13/05/2024", "feedback": "", "descricao": "Checkpoint 02 - Tradutor"},
-            {"idProva": 3, "semestre": 1, "nota": 7.1, "data": "16/09/2024", "feedback": "", "descricao": "Checkpoint 04 - EDA"},
-            {"idProva": 4, "semestre": 1, "nota": 7, "data": "05/04/2024", "feedback": "", "descricao": "Checkpoint 01 - WA"},
-            {"idProva": 5, "semestre": 2, "nota": 7.5, "data": "27/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
-            {"idProva": 6, "semestre": 2, "nota": 4.8, "data": "28/05/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
-            {"idProva": 7, "semestre": 1, "nota": 0, "data": "24/05/2024", "feedback": "", "descricao": "Checkpoint 03 - NLU"}
-          ],
-          "gs": [],
-          "challenge": [
-            {"idProva": 8, "semestre": 1, "nota": 6, "data": "09/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"}
-          ]
-        },
-        {
-          "disciplina": "BUILDING RELATIONAL DATABASE",
-          "checkpoints": [
-            {"idProva": 9, "semestre": 1, "nota": 9.5, "data": "22/05/2024", "feedback": "", "descricao": "checkpoint 3"},
-            {"idProva": 10, "semestre": 1, "nota": 0, "data": "08/05/2024", "feedback": "", "descricao": "checkpoint 2"},
-            {"idProva": 11, "semestre": 1, "nota": 8, "data": "10/04/2024", "feedback": "", "descricao": "checkpoint 1"},
-            {"idProva": 12, "semestre": 2, "nota": 6, "data": "02/10/2024", "feedback": "", "descricao": "checkpoint 2 - S2"},
-            {"idProva": 13, "semestre": 2, "nota": 8, "data": "21/08/2024", "feedback": "", "descricao": "checkpoint 1 - S2"}
-          ],
-          "gs": [],
-          "challenge": [
-            {"idProva": 14, "semestre": 1, "nota": 7, "data": "04/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
-            {"idProva": 15, "semestre": 2, "nota": 7.5, "data": "22/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
-            {"idProva": 16, "semestre": 1, "nota": 6, "data": "27/05/2024", "feedback": "", "descricao": "Challenge Sprints 2"}
-          ]
-        },
-        {
-          "disciplina": "COMPUTATIONAL THINKING USING PYTHON",
-          "checkpoints": [
-            {"idProva": 17, "semestre": 1, "nota": 5, "data": "24/05/2024", "feedback": "", "descricao": "Check Point 3 - Primeiro Semestre Python"},
-            {"idProva": 18, "semestre": 1, "nota": 6, "data": "03/05/2024", "feedback": "", "descricao": "Check Point 2 - Primeiro Semestre Python"},
-            {"idProva": 19, "semestre": 1, "nota": 7, "data": "05/04/2024", "feedback": "", "descricao": "Checkpoint 1 - Primeiro Semestre"},
-            {"idProva": 20, "semestre": 2, "nota": 9, "data": "04/10/2024", "feedback": "", "descricao": "Check Point 2 - Segundo Semestre Python"},
-            {"idProva": 21, "semestre": 2, "nota": 8, "data": "06/09/2024", "feedback": "", "descricao": "Check Point 1 - Segundo Semestre Python"}
-          ],
-          "gs": [],
-          "challenge": [
-            {"idProva": 22, "semestre": 1, "nota": 8.3, "data": "09/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
-            {"idProva": 23, "semestre": 2, "nota": 1, "data": "19/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
-            {"idProva": 24,  "semestre": 1, "nota": 9.3, "data": "27/05/2024", "feedback": "", "descricao": "Challenge Sprints 2"}
-          ]
-        },
-        {
-          "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA",
-          "checkpoints": [
-            {"idProva": 25, "semestre": 1, "nota": 7, "data": "03/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
-            {"idProva": 26, "semestre": 1, "nota": 0, "data": "29/04/2024", "feedback": "", "descricao": "Checkpoint 2 - Primeiro Semestre"},
-            {"idProva": 27, "semestre": 1, "nota": 9, "data": "25/03/2024", "feedback": "", "descricao": "Checkpoint 1 - Primeiro Semestre"},
-            {"idProva": 28, "semestre": 2, "nota": 10, "data": "07/10/2024", "feedback": "", "descricao": "Checkpoint 5 - Segundo Semestre"},
-            {"idProva": 29, "semestre": 2, "nota": 7, "data": "02/09/2024", "feedback": "", "descricao": "Checkpoint 4 - Segundo Semestre"}
-          ],
-          "gs": [],
-          "challenge": [
-            {"idProva": 30, "semestre": 1, "nota": 5.5, "data": "26/05/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
-            {"idProva": 31, "semestre": 2, "nota": 8, "data": "20/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"}
-          ]
-        },
-        {
-          "disciplina": "FRONT-END DESIGN ENGINEERING",
-          "checkpoints": [
-            {"idProva": 32, "semestre": 1, "nota": 8.5, "data": "23/05/2024", "feedback": "", "descricao": "CP1 - Cursos FIAP"},
-            {"idProva": 33, "semestre": 1, "nota": 3, "data": "20/05/2024", "feedback": "", "descricao": "CP2 - Implementação de Protótipo"},
-            {"idProva": 34, "semestre": 2, "nota": 5.5, "data": "20/10/2024", "feedback": "", "descricao": "CP2 - Worlds in Collision"}
-          ],
-          "gs": [],
-          "challenge": [
-            {"idProva": 35, "semestre": 1, "nota": 7, "data": "21/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
-            {"idProva": 36, "semestre": 1, "nota": 8, "data": "01/06/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
-            {"idProva": 37, "semestre": 2, "nota": 6.8, "data": "22/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"}
-          ]
-        },
-        {
-          "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL",
-          "checkpoints": [
-            {"idProva": 38, "semestre": 1, "nota": 5, "data": "22/05/2024", "feedback": "", "descricao": "Entrga de Check Point III"},
-            {"idProva": 39, "semestre": 1, "nota": 5.5, "data": "21/05/2024", "feedback": "", "descricao": "Challenge - Método Kanban"},
-            {"idProva": 40, "semestre": 2, "nota": 8.5, "data": "13/09/2024", "feedback": "", "descricao": "Check Point V"}
-          ],
-          "gs": [],
-          "challenge": [
-            {"idProva": 41, "semestre": 1, "nota": 6, "data": "04/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
-            {"idProva": 42, "semestre": 2, "nota": 7.5, "data": "23/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"}
-          ]
-        }
+      "provas": [
+        {"idProva": 1, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 7.0, "data": "05/04/2024", "feedback": "", "descricao": "Checkpoint 01 - WA"},
+        {"idProva": 2, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 5.4, "data": "13/05/2024", "feedback": "", "descricao": "Checkpoint 02 - Tradutor"},
+        {"idProva": 3, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": null, "data": "24/05/2024", "feedback": "", "descricao": "Checkpoint 03 - NLU"},
+        {"idProva": 4, "semestre": 1, "avaliacao": "challenge", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 6.0, "data": "09/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
+        {"idProva": 5, "semestre": 1, "avaliacao": "challenge", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 4.8, "data": "28/05/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
+        {"idProva": 6, "semestre": 2, "avaliacao": "checkpoint", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 7.1, "data": "16/09/2024", "feedback": "", "descricao": "Checkpoint 04 - EDA"},
+        {"idProva": 7, "semestre": 2, "avaliacao": "challenge", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 7.5, "data": "27/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
+        {"idProva": 8, "semestre": 1, "avaliacao": "global", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 5.0, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
+        
+        {"idProva": 9, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 7.0, "data": "05/04/2024", "feedback": "", "descricao": "Check Point 1 - Primeiro Semestre Python"},
+        {"idProva": 10, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 6.0, "data": "03/05/2024", "feedback": "", "descricao": "Check Point 2 - Primeiro Semestre Python"},
+        {"idProva": 11, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 5.0, "data": "24/05/2024", "feedback": "", "descricao": "Check Point 3 - Primeiro Semestre Python"},
+        {"idProva": 12, "semestre": 2, "avaliacao": "checkpoint", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 8.0, "data": "06/09/2024", "feedback": "", "descricao": "Check Point 1 - Segundo Semestre Python"},
+        {"idProva": 13, "semestre": 2, "avaliacao": "checkpoint", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 9.0, "data": "04/10/2024", "feedback": "", "descricao": "Check Point 2 - Segundo Semestre Python"},
+        {"idProva": 14, "semestre": 1, "avaliacao": "challenge", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 8.3, "data": "09/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
+        {"idProva": 15, "semestre": 1, "avaliacao": "challenge", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 9.3, "data": "27/05/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
+        {"idProva": 16, "semestre": 2, "avaliacao": "challenge", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 1, "data": "19/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
+        {"idProva": 17, "semestre": 1, "avaliacao": "global", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 9.0, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
+        
+        {"idProva": 18, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 8.0, "data": "10/04/2024", "feedback": "", "descricao": "Checkpoint 1"},
+        {"idProva": 19, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0.0, "data": "08/05/2024", "feedback": "", "descricao": "Checkpoint 2"},
+        {"idProva": 20, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 9.5, "data": "22/05/2024", "feedback": "", "descricao": "Checkpoint 3"},
+        {"idProva": 21, "semestre": 1, "avaliacao": "challenge", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 7.0, "data": "04/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
+        {"idProva": 22, "semestre": 1, "avaliacao": "challenge", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 6.0, "data": "27/05/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
+        {"idProva": 23, "semestre": 2, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 8.0, "data": "21/08/2024", "feedback": "", "descricao": "Checkpoint 1 - S2"},
+        {"idProva": 24, "semestre": 2, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 6.0, "data": "02/10/2024", "feedback": "", "descricao": "Checkpoint 2 - S2"},
+        {"idProva": 25, "semestre": 2, "avaliacao": "challenge", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 7.5, "data": "22/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
+        {"idProva": 26, "semestre": 1, "avaliacao": "global", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 8.5, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
+
+        {"idProva": 27, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 9, "data": "25/03/2024", "feedback": "", "descricao": "Checkpoint 1 - Primeiro Semestre"},
+        {"idProva": 28, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "29/04/2024", "feedback": "", "descricao": "Checkpoint 2 - Primeiro Semestre"},
+        {"idProva": 29, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 7, "data": "20/05/2024", "feedback": "", "descricao": "Checkpoint 3 - Primeiro Semestre"},
+        {"idProva": 30, "semestre": 2, "avaliacao": "checkpoint", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 7, "data": "02/09/2024", "feedback": "", "descricao": "Checkpoint 4 - Segundo Semestre"},
+        {"idProva": 31, "semestre": 2, "avaliacao": "checkpoint", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 10, "data": "07/10/2024", "feedback": "", "descricao": "Checkpoint 5 - Segundo Semestre"},
+        {"idProva": 32, "semestre": 1, "avaliacao": "challenge", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 7, "data": "03/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
+        {"idProva": 33, "semestre": 1, "avaliacao": "challenge", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 5.5, "data": "26/05/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
+        {"idProva": 34, "semestre": 2, "avaliacao": "challenge", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 8, "data": "20/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
+        {"idProva": 35, "semestre": 1, "avaliacao": "global", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 8.5, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
+
+        {"idProva": 36, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 8.5, "data": "23/05/2024", "feedback": "", "descricao": "CP1 - Cursos FIAP"},
+        {"idProva": 37, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 3.0, "data": "20/05/2024", "feedback": "", "descricao": "CP2 - Implementação de Protótipo"},
+        {"idProva": 38, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 5.0, "data": "08/06/2024", "feedback": "", "descricao": "CP1 - Login Logout"},
+        {"idProva": 39, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 0, "data": "13/09/2024", "feedback": "", "descricao": "CP1 - SPA / Livraria"},
+        {"idProva": 40, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 5.5, "data": "20/10/2024", "feedback": "", "descricao": "CP2 - Worlds in Collision"},
+        {"idProva": 41, "semestre": 1, "avaliacao": "challenge", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 7.0, "data": "21/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
+        {"idProva": 42, "semestre": 1, "avaliacao": "challenge", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 8.0, "data": "01/06/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
+        {"idProva": 43, "semestre": 1, "avaliacao": "challenge", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 6.8, "data": "22/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
+        {"idProva": 44, "semestre": 1, "avaliacao": "global", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 8.0, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
+
+        {"idProva": 45, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 10.0, "data": "20/03/2024", "feedback": "", "descricao": "Apresentação de Casos Reais de TD"},
+        {"idProva": 46, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 5.0, "data": "24/04/2024", "feedback": "", "descricao": "Temas Apresentados na Disciplina"},
+        {"idProva": 47, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 5.0, "data": "22/05/2024", "feedback": "", "descricao": "Entrga de Check Point III"},
+        {"idProva": 48, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 10.0, "data": "11/09/2024", "feedback": "", "descricao": "Diagrama de Atividades, Sequencia e Heurisiticas"},
+        {"idProva": 49, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": null, "data": "09/10/2024", "feedback": "", "descricao": "Negócios Digitais, Precificação, ROI, SLA"},
+        {"idProva": 50, "semestre": 1, "avaliacao": "challenge", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 7.5, "data": "09/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
+        {"idProva": 51, "semestre": 1, "avaliacao": "challenge", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 9, "data": "26/05/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
+        {"idProva": 52, "semestre": 1, "avaliacao": "challenge", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 6.0, "data": "23/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
+        {"idProva": 53, "semestre": 1, "avaliacao": "global", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 10.0, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"}
       ]
     }
-    
 ]

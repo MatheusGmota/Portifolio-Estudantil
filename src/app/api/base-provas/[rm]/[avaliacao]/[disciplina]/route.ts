@@ -12,23 +12,16 @@ export async function GET(request: Request,{ params }:  { params : {rm: string, 
         return NextResponse.json({mensagem: "Não foi possível encontrar o aluno."}), {status: 404};
     }
 
-    const dscpEncontrada = aluno.disciplinas.find(d=> d.disciplina === decodeURIComponent(params.disciplina))
-    
-    if (!dscpEncontrada) {    
+    const provas = aluno.provas.filter((p) => {
+        if (p.avaliacao === params.avaliacao && p.disciplina === decodeURIComponent(params.disciplina)) {
+            return p
+        } 
+    })
+
+    if (provas.length) {    
         return NextResponse.json({mensagem: "Não foi possível encontrar a disciplina."}), {status: 404};
     }
-
-
-    let provas;
-    if (params.avaliacao === "checkpoints" ){
-        provas = dscpEncontrada.checkpoints;
-    }
-    else if (params.avaliacao === "challenge-sprints") {
-        provas = dscpEncontrada.challenge;
-    }
-    else if (params.avaliacao === "global-solutions") {
-        provas = dscpEncontrada.gs;
-    }        
+       
     
     return NextResponse.json(provas);
 }
