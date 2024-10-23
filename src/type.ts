@@ -1,14 +1,15 @@
 export type TipoAluno = {
     rm: string,
+    img: string,
     nome: string,
     turma: string,
     curso: string
 }
 
 export type TipoNotas = {
-    rm: string, 
-    provas: TipoProva[] 
-} 
+    rm: string,
+    provas: TipoProva[]
+}
 
 export type TipoProva = {
     idProva: number;
