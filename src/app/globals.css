@@ -43,4 +43,20 @@ body {
 			@apply hover:bg-gray-800 font-normal;
 		}
 	}
+
+	.form-editar {
+		@apply flex flex-col gap-5;
+		& section {
+			@apply flex items-center justify-between gap-10;
+		}
+		& div {
+			@apply w-full;
+		}
+		& div label{
+			@apply block text-base font-normal;
+		}
+		& div input, div select{
+			@apply border border-gray-700 p-2 rounded-lg w-64 outline-pink-500;
+		}
+	}
 }

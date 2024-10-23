@@ -9,8 +9,8 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
     const navegacao = useRouter()
     
     const [prova, setProva] = useState<TipoProva>({
-        idProva: 1, 
-        semestre:1, 
+        idProva: 0, 
+        semestre: 0, 
         nota: 0, 
         data: "", 
         feedback: "" , 
@@ -29,9 +29,14 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
         chamadaApi()
     },[params])
 
-    const handleChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
-        e.preventDefault()
 
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        e.preventDefault()
+        const { name, value } = e.target
+        setProva((prev) => ({...prev, [name]: value}))
+    }
+
+    const handleSubmit = async () => {
         try {
 
             const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/editar-prova/${params.idProva}`, {
@@ -45,8 +50,8 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
             if (response.ok) {
                 alert("Prova atualizada com sucesso!")
                 setProva({
-                    idProva: 1, 
-                    semestre:1, 
+                    idProva: 0, 
+                    semestre: 0, 
                     nota: 0, 
                     data: "", 
                     feedback: "" , 
@@ -63,10 +68,11 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
     } 
 
     return (
-        <div>
-            <section>
-                <h1>Editar Avaliação</h1>
-                <form>
+        <div className="flex items-center justify-center">
+            <section className="flex flex-col items-center max-w-xl gap-5 p-8 rounded-lg shadow-2xl">
+                <h1 className="font-bold text-2xl antialiased">Editar Avaliação</h1>
+                <p>{prova.disciplina}</p>
+                <form onSubmit={handleSubmit} className="form-editar">
                     
                     <section>
                         <div>
@@ -74,6 +80,14 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
                             <select name="semestre" id="semestre">
                                 <option value={1}>1° Semestre</option>
                                 <option value={2}>2° Semestre</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Avaliação</label>
+                            <select name="avaliacao" id="avalicao">
+                                <option value="checkpoint">Checkpoint</option>
+                                <option value="challenge">Challenge Sprints</option>
+                                <option value="gs">Global Solutions</option>
                             </select>
                         </div>
                     </section>
@@ -86,46 +100,54 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
                                 id="descricao"
                                 name="descricao"
                                 value={prova.descricao}
-                                onChange={(e)=> handleChange(e)}
-                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 placeholder="Descrição"
+                                onChange={(e) => handleChange(e)}
                                 required
                                 />
-                    
                         </div>
                         <div>
-                            <label></label>
-                            <input type="text" />
+                            <label>Data</label>
+                            <input
+                                type="text"
+                                id="data"
+                                name="data"
+                                value={prova.data}
+                                placeholder="Data"
+                                onChange={(e) => handleChange(e)}
+                                required
+                            />
                         </div>
                     </section>
                     
                     <section>
                         <div>
-                            <label></label>
-                            <input type="text" />
+                            <label>Nota</label>
+                            <input 
+                                type="number"
+                                id="nota"
+                                name="nota"
+                                value={prova.nota}
+                                placeholder="Nota"
+                                onChange={(e) => handleChange(e)}
+                                required
+                            />
                     
                         </div>
                         <div>
-                            <label></label>
-                            <input type="text" />
+                            <label>Feedback</label>
+                            <input
+                                type="text"
+                                id="feedback"
+                                name="feedback"
+                                value={prova.feedback}
+                                placeholder="Feedback"
+                                onChange={(e) => handleChange(e)}
+                            />
                         </div>
                     </section>
                     
                     <section>
-                        <div>
-                            <label></label>
-                            <input type="text" />
-                    
-                        </div>
-
-                        <div>
-                            <label></label>
-                            <input type="text" />
-                        </div>
-                    </section>
-                    
-                    <section>
-                        <button type="submit">Editar</button>
+                        <button className="botao bg-slate-800 text-white w-full" type="submit">Editar</button>
                     </section>
                 </form>
             </section>

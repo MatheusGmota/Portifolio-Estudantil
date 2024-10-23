@@ -18,7 +18,7 @@ export async function GET(request: Request,{ params }:  { params : {rm: string, 
         } 
     })
 
-    if (provas.length) {    
+    if (!provas.length) {    
         return NextResponse.json({mensagem: "Não foi possível encontrar a disciplina."}), {status: 404};
     }
        

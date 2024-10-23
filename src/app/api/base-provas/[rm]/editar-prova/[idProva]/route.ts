@@ -18,8 +18,6 @@ export async function GET(request: Request,{ params }:  { params : {rm: string, 
         return NextResponse.json({mensagem: "Não foi possível encontrar a disciplina."}), {status: 404};
     }
     
-    console.log(prova);
-    
     
     return NextResponse.json(prova);
 }
@@ -49,17 +47,4 @@ export async function PUT(request: Request, { params }:  { params : {rm: string,
         return NextResponse.json({msg:"Prova atualizado com sucesso!"});
     
     }
-
-    const provas = aluno.provas.filter((p) => {
-        if (p.idProva === params.idProva) {
-            return p
-        } 
-    })
-
-    if (!provas) {    
-        return NextResponse.json({mensagem: "Não foi possível encontrar a disciplina."}), {status: 404};
-    }
-       
-    
-    return NextResponse.json(provas);
 }
