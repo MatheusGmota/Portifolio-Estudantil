@@ -1,8 +1,7 @@
 "use client"
 
+import { motion } from "framer-motion";
 import Link from "next/link";
-import { easeInOut, motion } from "framer-motion";
-import { div } from "framer-motion/client";
 
 export default function DashBordAluno() {
 
