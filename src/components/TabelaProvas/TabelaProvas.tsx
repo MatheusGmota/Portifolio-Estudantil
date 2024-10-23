@@ -1,8 +1,8 @@
-import { TipoProva } from "@/type";
+import { TipoProva } from "@/types";
 import Link from "next/link";
 import { useParams } from "next/navigation";
- 
-export default function TabelaProvas( {provas} : {provas :TipoProva[]} ) {
+
+export default function TabelaProvas({ provas }: { provas: TipoProva[] }) {
     const { rm } = useParams()
     return (
         <table className="tabela-provas">

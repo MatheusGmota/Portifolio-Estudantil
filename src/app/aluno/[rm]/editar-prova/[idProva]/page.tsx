@@ -1,25 +1,25 @@
 'use client'
 
-import { TipoProva } from "@/type"
+import { TipoProva } from "@/types"
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 
-export default function Editar({ params }:  { params : {rm: string, idProva: number }}) {
+export default function Editar({ params }: { params: { rm: string, idProva: number } }) {
 
     const navegacao = useRouter()
-    
+
     const [prova, setProva] = useState<TipoProva>({
-        idProva: 0, 
-        semestre: 0, 
-        nota: 0, 
-        data: "", 
-        feedback: "" , 
-        avaliacao: "", 
-        disciplina: "", 
+        idProva: 0,
+        semestre: 0,
+        nota: 0,
+        data: "",
+        feedback: "",
+        avaliacao: "",
+        disciplina: "",
         descricao: ""
     })
-    
-    useEffect(()=> {
+
+    useEffect(() => {
         const chamadaApi = async () => {
             const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/editar-prova/${params.idProva}`)
             const data = await response.json()
@@ -27,36 +27,36 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
             setProva(data)
         }
         chamadaApi()
-    },[params])
+    }, [params])
 
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         e.preventDefault()
         const { name, value } = e.target
-        setProva((prev) => ({...prev, [name]: value}))
+        setProva((prev) => ({ ...prev, [name]: value }))
     }
 
     const handleSubmit = async () => {
         try {
 
             const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/editar-prova/${params.idProva}`, {
-                method:"PUT",
-                headers:{
-                "Content-Type" : "application/json"
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
                 },
                 body: JSON.stringify(prova)
             })
-            
+
             if (response.ok) {
                 alert("Prova atualizada com sucesso!")
                 setProva({
-                    idProva: 0, 
-                    semestre: 0, 
-                    nota: 0, 
-                    data: "", 
-                    feedback: "" , 
-                    avaliacao: "", 
-                    disciplina: "", 
+                    idProva: 0,
+                    semestre: 0,
+                    nota: 0,
+                    data: "",
+                    feedback: "",
+                    avaliacao: "",
+                    disciplina: "",
                     descricao: ""
                 })
                 navegacao.push(`/aluno/${params.rm}`)
@@ -65,7 +65,7 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
         } catch (e) {
             console.error("Erro ao atualizar prova", e)
         }
-    } 
+    }
 
     return (
         <div className="flex items-center justify-center">
@@ -73,7 +73,7 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
                 <h1 className="font-bold text-2xl antialiased">Editar Avaliação</h1>
                 <p>{prova.disciplina}</p>
                 <form onSubmit={handleSubmit} className="form-editar">
-                    
+
                     <section>
                         <div>
                             <label>Semestre</label>
@@ -91,11 +91,11 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
                             </select>
                         </div>
                     </section>
-                    
+
                     <section>
                         <div>
                             <label>Descrição</label>
-                            <input 
+                            <input
                                 type="text"
                                 id="descricao"
                                 name="descricao"
@@ -103,7 +103,7 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
                                 placeholder="Descrição"
                                 onChange={(e) => handleChange(e)}
                                 required
-                                />
+                            />
                         </div>
                         <div>
                             <label>Data</label>
@@ -118,11 +118,11 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
                             />
                         </div>
                     </section>
-                    
+
                     <section>
                         <div>
                             <label>Nota</label>
-                            <input 
+                            <input
                                 type="number"
                                 id="nota"
                                 name="nota"
@@ -131,7 +131,7 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
                                 onChange={(e) => handleChange(e)}
                                 required
                             />
-                    
+
                         </div>
                         <div>
                             <label>Feedback</label>
@@ -145,7 +145,7 @@ export default function Editar({ params }:  { params : {rm: string, idProva: num
                             />
                         </div>
                     </section>
-                    
+
                     <section>
                         <button className="botao bg-slate-800 text-white w-full" type="submit">Editar</button>
                     </section>
