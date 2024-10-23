@@ -23,4 +23,20 @@ body {
       }
     }
   }
+
+  .page-alunos{
+    @apply grid grid-cols-3 gap-14 m-6 ;
+    & .movimento{
+      @apply h-44 items-center shadow-xl rounded-xl divide-y divide-solid;
+      & h3{
+        @apply text-center h-8;
+      }
+      & div{
+        @apply gap-2 flex flex-col content-center divide-y divide-solid;
+        & a{
+          @apply flex content-center h-10 py-3 justify-between mx-4 font-bold
+        }
+      }
+    }
+  }
 }

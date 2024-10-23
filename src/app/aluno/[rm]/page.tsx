@@ -1,58 +1,51 @@
 "use client"
 
-export default function DashBordAluno(){
+import Link from "next/link";
+import { easeInOut, motion } from "framer-motion";
+import { div } from "framer-motion/client";
 
+export default function DashBordAluno() {
 
-    return(
-        <div className="grid grid-cols-3">
-            <section>
-                <h3>
-                    Artificial Intelligence & ChatBot
-                </h3>
-                    <div>
-                        <p><button></button></p>
-                    </div>
-            </section>
-            <section>
-                <h3>
-                    Building Relational DataBase
-                </h3>
-                    <div>
-                        <p><button></button></p>
-                    </div>
-            </section>
-            <section>
-                <h3>
-                    Computational Thinkin Using Python
-                </h3>
-                    <div>
-                        <p><button></button></p>
-                    </div>
-            </section>
-            <section>
-                <h3>
-                    Domain Driven Design Using Java
-                </h3>
-                    <div>
-                        <p><button></button></p>
-                    </div>
-            </section>
-            <section>
-                <h3>
-                    Front-End Design Engneering
-                </h3>
-                    <div>
-                        <p><button></button></p>
-                    </div>
-            </section>
-            <section>
-                <h3>
-                    Software Engineering and Business Model
-                </h3>
-                    <div>
-                        <p><button></button></p>
-                    </div>
-            </section>
+    const disciplinas = ["ARTIFICIAL INTELLIGENCE & CHATBOT", "COMPUTATIONAL THINKING USING PYTHON", "DOMAIN DRIVEN DESIGN USING JAVA", "BUILDING RELATIONAL DATABASE", "FRONT-END DESIGN ENGINEERING", "SOFTWARE ENGINEERING AND BUSINESS MODEL"];
+
+    return (
+        <div>
+            <h1 className="text-center font-bold text-4xl p-7">
+                Disciplinas
+            </h1>
+            <div className="page-alunos">
+                {disciplinas.map((d) => (
+                    <>
+                        <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ ease: "easeInOut", duration: 0.7 }} className="movimento">
+                            <h3>
+                                {d}
+                            </h3>
+                            <div>
+                                <Link href={`checkpoint/${d}`}>
+                                    CheckPoints
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 stroke-2">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+
+                                </Link>
+                                <Link href={`challenge/${d}`}>
+                                    Challenges - Sprints
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 stroke-2">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </Link>
+
+                                <Link href={`gs/${d}`}>
+                                    Global Solutions
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 stroke-2">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </Link>
+                            </div>
+                        </motion.div>
+                    </>
+                ))}
+            </div>
         </div>
     );
 }
