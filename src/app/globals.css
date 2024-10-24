@@ -28,4 +28,8 @@ body {
   & .box:not(:last-child){
     @apply border-r-2 border-gray-300;
   }
+
+  .card-area{
+    @apply md:flex-row flex flex-col self-center 
+  }
 }
