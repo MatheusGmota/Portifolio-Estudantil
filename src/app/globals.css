@@ -7,29 +7,129 @@ body {
   font-family: Noto Sans, sans-serif;
 }
 
-
-.pagina-inicial{
-  @apply p-16 flex flex-col space-y-24;
-  & .titulo{
-      @apply text-4xl font-bold text-center mb-12;
-  }
-  & .area{
-      @apply grid grid-cols-1 md:grid-cols-3 text-center mb-16;
-  }
-  & .box{
-    @apply  p-5;
-    & .sub-titulos{
-      @apply text-4xl font-semibold mb-4;
+@layer components {
+  .pagina-inicial{
+    @apply p-16 flex flex-col space-y-24;
+    & .titulo{
+        @apply text-4xl font-bold text-center mb-12;
     }
-    & .texto{
-      @apply text-gray-600;
+    & .area{
+        @apply grid grid-cols-1 md:grid-cols-3 text-center mb-16;
+    }
+    & .box{
+      @apply  p-5;
+      & .sub-titulos{
+        @apply text-4xl font-semibold mb-4;
+      }
+      & .texto{
+        @apply text-gray-600;
+      }
+    }
+    & .box:not(:last-child){
+      @apply border-r-2 border-gray-300;
+    }
+
+    .card-area{
+      @apply md:flex-row flex flex-col self-center 
     }
   }
-  & .box:not(:last-child){
-    @apply border-r-2 border-gray-300;
-  }
+  
+	.barra-lateral{
+		@apply flex text-white bg-gray-900 w-72 min-h-screen p-5;
+	}
 
-  .card-area{
-    @apply md:flex-row flex flex-col self-center 
-  }
+	.wrapper-aluno{
+		@apply flex flex-col h-full gap-10 justify-between;
+		& .aluno{
+		  	@apply text-2xl flex flex-col items-center m-2;
+		}
+		& .dados{
+			@apply text-sm flex flex-col items-center m-2;
+		  	& p{
+				@apply m-2 text-center;
+		  	}
+		}
+	}
+
+	.form-adicionar {
+        @apply grid grid-cols-2 gap-5;
+        & section {
+            @apply flex items-center justify-between gap-10;
+        }
+        & div {
+            @apply w-full;
+        }
+        & div label{
+            @apply block text-base font-normal;
+        }
+        & div input, div select{
+            @apply border border-gray-700 p-2 rounded-lg w-64 outline-pink-500;
+        }
+    }
+
+	.form-editar {
+        @apply flex flex-col gap-5;
+        & section {
+            @apply flex items-center justify-between gap-10;
+        }
+        & div {
+            @apply w-full;
+        }
+        & div label{
+            @apply block text-base font-normal;
+        }
+        & div input, div select{
+            @apply border border-gray-700 p-2 rounded-lg w-64 outline-pink-500;
+        }
+    }
+	
+  .page-alunos{
+		@apply grid grid-cols-3 gap-14 m-6 ;
+		& .movimento{
+		  @apply h-44 items-center shadow-xl rounded-xl divide-y divide-solid;
+		 	& h3{
+			  @apply text-center h-8;
+	  	}
+	  	& div{
+			  @apply gap-2 flex flex-col content-center divide-y divide-solid;
+			  & a{
+		  	  @apply flex content-center py-2 justify-between mx-4 font-bold hover:bg-gray-500 hover:text-white;
+			  }
+		  }
+	  }
+	}
+
+	.conteudo-principal {
+		@apply flex flex-col items-center gap-10 text-white p-6 rounded-lg bg-gray-900 shadow-2xl;
+		& article{
+			@apply flex items-center justify-between w-[1200px];
+			& div {
+				@apply flex justify-between min-w-60;
+			}
+		}
+	}
+
+	.botao {
+		@apply font-semibold text-sm rounded-lg bg-white text-black py-1 px-4 shadow-md  transition-all hover:text-white hover:bg-pink-600 hover:shadow-pink-900;
+	}
+
+	.botao.ativo {
+		@apply bg-pink-600 text-white shadow-pink-900;
+	}
+
+	.tabela-provas {
+		@apply w-full;
+		& tr {
+			@apply font-bold text-left w-96 border-b border-b-pink-400 ;
+			& td {
+				@apply text-sm text-white text-left py-3;
+			}
+			& td:last-child {
+				@apply text-right;
+			}
+		}
+		& tbody tr{
+			@apply hover:bg-gray-800 font-normal;
+		}
+	}
 }
