@@ -35,7 +35,7 @@ body {
 		  	& div{
 				@apply gap-2 flex flex-col content-center divide-y divide-solid;
 				& a{
-			  	@apply flex content-center h-10 py-3 justify-between mx-4 font-bold
+			  		@apply flex content-center py-2 justify-between mx-4 font-bold hover:bg-gray-500 hover:text-white
 				}
 		  	}
 		}

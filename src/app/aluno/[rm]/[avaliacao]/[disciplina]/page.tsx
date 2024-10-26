@@ -19,18 +19,20 @@ export default function Provas({ params }: { params: { rm: string, avaliacao: st
     useEffect(() => {
         const chamadaApi = async () => {
             const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/${params.avaliacao}/${params.disciplina}`)
-            const data = await response.json()
-
-            if (!data) {
-                alert("Erro ao realizar requisição.")
+            
+            if (!response.ok) {
+                alert(`Erro na requisição. Status: ${response.status}`)
                 navegacao.push(`/aluno/${params.rm}`)
+            } else {
+                const data = await response.json()
+                setProvas(data)
             }
 
-            setProvas(data)
         }
         chamadaApi()
     }, [params, navegacao])
 
+    
     useEffect(() => {
         setSemestre(provas.filter((p) => p.semestre === botaoAtivo))
     }, [provas, botaoAtivo])

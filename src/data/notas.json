@@ -1,6 +1,6 @@
 [
     {
-        "rm": "551118",
+        "rm": "555118",
         "provas": [
             {"idProva": 1, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
             {"idProva": 2, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 0, "data": "", "feedback": "", "descricao": ""},
@@ -91,7 +91,7 @@
         {"idProva": 5, "semestre": 1, "avaliacao": "challenge", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 4.8, "data": "28/05/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
         {"idProva": 6, "semestre": 2, "avaliacao": "checkpoint", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 7.1, "data": "16/09/2024", "feedback": "", "descricao": "Checkpoint 04 - EDA"},
         {"idProva": 7, "semestre": 2, "avaliacao": "challenge", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 7.5, "data": "27/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
-        {"idProva": 8, "semestre": 1, "avaliacao": "global", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 5.0, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
+        {"idProva": 8, "semestre": 1, "avaliacao": "gs", "disciplina": "ARTIFICIAL INTELLIGENCE & CHATBOT", "nota": 5.0, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
         
         {"idProva": 9, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 7.0, "data": "05/04/2024", "feedback": "", "descricao": "Check Point 1 - Primeiro Semestre Python"},
         {"idProva": 10, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 6.0, "data": "03/05/2024", "feedback": "", "descricao": "Check Point 2 - Primeiro Semestre Python"},
@@ -101,7 +101,7 @@
         {"idProva": 14, "semestre": 1, "avaliacao": "challenge", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 8.3, "data": "09/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
         {"idProva": 15, "semestre": 1, "avaliacao": "challenge", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 9.3, "data": "27/05/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
         {"idProva": 16, "semestre": 2, "avaliacao": "challenge", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 1, "data": "19/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
-        {"idProva": 17, "semestre": 1, "avaliacao": "global", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 9.0, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
+        {"idProva": 17, "semestre": 1, "avaliacao": "gs", "disciplina": "COMPUTATIONAL THINKING USING PYTHON", "nota": 9.0, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
         
         {"idProva": 18, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 8.0, "data": "10/04/2024", "feedback": "", "descricao": "Checkpoint 1"},
         {"idProva": 19, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 0.0, "data": "08/05/2024", "feedback": "", "descricao": "Checkpoint 2"},
@@ -111,7 +111,7 @@
         {"idProva": 23, "semestre": 2, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 8.0, "data": "21/08/2024", "feedback": "", "descricao": "Checkpoint 1 - S2"},
         {"idProva": 24, "semestre": 2, "avaliacao": "checkpoint", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 6.0, "data": "02/10/2024", "feedback": "", "descricao": "Checkpoint 2 - S2"},
         {"idProva": 25, "semestre": 2, "avaliacao": "challenge", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 7.5, "data": "22/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
-        {"idProva": 26, "semestre": 1, "avaliacao": "global", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 8.5, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
+        {"idProva": 26, "semestre": 1, "avaliacao": "gs", "disciplina": "BUILDING RELATIONAL DATABASE", "nota": 8.5, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
 
         {"idProva": 27, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 9, "data": "25/03/2024", "feedback": "", "descricao": "Checkpoint 1 - Primeiro Semestre"},
         {"idProva": 28, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 0, "data": "29/04/2024", "feedback": "", "descricao": "Checkpoint 2 - Primeiro Semestre"},
@@ -121,7 +121,7 @@
         {"idProva": 32, "semestre": 1, "avaliacao": "challenge", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 7, "data": "03/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
         {"idProva": 33, "semestre": 1, "avaliacao": "challenge", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 5.5, "data": "26/05/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
         {"idProva": 34, "semestre": 2, "avaliacao": "challenge", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 8, "data": "20/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
-        {"idProva": 35, "semestre": 1, "avaliacao": "global", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 8.5, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
+        {"idProva": 35, "semestre": 1, "avaliacao": "gs", "disciplina": "DOMAIN DRIVEN DESIGN USING JAVA", "nota": 8.5, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
 
         {"idProva": 36, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 8.5, "data": "23/05/2024", "feedback": "", "descricao": "CP1 - Cursos FIAP"},
         {"idProva": 37, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 3.0, "data": "20/05/2024", "feedback": "", "descricao": "CP2 - Implementação de Protótipo"},
@@ -131,7 +131,7 @@
         {"idProva": 41, "semestre": 1, "avaliacao": "challenge", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 7.0, "data": "21/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
         {"idProva": 42, "semestre": 1, "avaliacao": "challenge", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 8.0, "data": "01/06/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
         {"idProva": 43, "semestre": 1, "avaliacao": "challenge", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 6.8, "data": "22/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
-        {"idProva": 44, "semestre": 1, "avaliacao": "global", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 8.0, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
+        {"idProva": 44, "semestre": 1, "avaliacao": "gs", "disciplina": "FRONT-END DESIGN ENGINEERING", "nota": 8.0, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"},
 
         {"idProva": 45, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 10.0, "data": "20/03/2024", "feedback": "", "descricao": "Apresentação de Casos Reais de TD"},
         {"idProva": 46, "semestre": 1, "avaliacao": "checkpoint", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 5.0, "data": "24/04/2024", "feedback": "", "descricao": "Temas Apresentados na Disciplina"},
@@ -141,7 +141,7 @@
         {"idProva": 50, "semestre": 1, "avaliacao": "challenge", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 7.5, "data": "09/05/2024", "feedback": "", "descricao": "Challenge Sprints 1"},
         {"idProva": 51, "semestre": 1, "avaliacao": "challenge", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 9, "data": "26/05/2024", "feedback": "", "descricao": "Challenge Sprints 2"},
         {"idProva": 52, "semestre": 1, "avaliacao": "challenge", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 6.0, "data": "23/09/2024", "feedback": "", "descricao": "Challenge Sprints 3"},
-        {"idProva": 53, "semestre": 1, "avaliacao": "global", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 10.0, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"}
+        {"idProva": 53, "semestre": 1, "avaliacao": "gs", "disciplina": "SOFTWARE ENGINEERING AND BUSINESS MODEL", "nota": 10.0, "data": "07/06/2024", "feedback": "", "descricao": "Global Solutions"}
       ]
     }
 ]

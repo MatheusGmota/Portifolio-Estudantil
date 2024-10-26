@@ -8,6 +8,5 @@ export async function GET(request: Request, { params }: { params: { rm: string }
     const dados:TipoAluno[] = JSON.parse(file);
 
     const aluno = dados.find(a => a.rm == params.rm);
-    console.log(aluno)
-    return NextResponse.json(aluno);
+    return NextResponse.json(aluno, {status: 200});
 }

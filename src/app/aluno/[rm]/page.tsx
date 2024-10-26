@@ -13,8 +13,8 @@ export default function DashBordAluno({ params }: { params: { rm: number } }) {
                 Disciplinas
             </h1>
             <div className="page-alunos">
-                {disciplinas.map((d) => (
-                    <>
+                {disciplinas.map((d, i) => (
+                    <div key={i}>
                         <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ ease: "easeInOut", duration: 0.7 }} className="movimento">
                             <h3>
                                 {d}
@@ -42,7 +42,7 @@ export default function DashBordAluno({ params }: { params: { rm: number } }) {
                                 </Link>
                             </div>
                         </motion.div>
-                    </>
+                    </div>
                 ))}
             </div>
         </div>

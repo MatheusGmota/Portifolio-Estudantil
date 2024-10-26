@@ -44,7 +44,7 @@ export async function PUT(request: Request, { params }: { params: { rm: string, 
 
         await fs.writeFile(process.cwd() + '/src/data/notas.json', fileUpdate);
 
-        return NextResponse.json({ msg: "Prova atualizado com sucesso!" });
+        return NextResponse.json({ msg: "Prova atualizada com sucesso!" },  {status: 201});
 
     }
 }
