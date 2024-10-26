@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Noto_Sans } from "next/font/google"
+
+const font = Noto_Sans({
+    weight: ['400', '900'],
+    subsets: ['latin']
+})
 
 export const metadata: Metadata = {
     title: "Portifolio Estudantil",
@@ -14,7 +20,7 @@ export const viewport = {
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
     return (
         <html lang="pt-br">
-        <body className="min-h-screen">
+        <body className={`min-h-screen ${font.className}`}>
             {children}
         </body>
         </html>
