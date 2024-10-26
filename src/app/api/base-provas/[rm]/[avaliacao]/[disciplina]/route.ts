@@ -18,8 +18,6 @@ export async function GET(request: Request, { params }: { params: { rm: string, 
         }
     })
 
-    console.log(provas)
-
     if (!provas) {
         return NextResponse.json({ text: "Não foi possível encontrar a disciplina." }, { status: 404 });
     }

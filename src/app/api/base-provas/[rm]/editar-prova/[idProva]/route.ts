@@ -9,13 +9,13 @@ export async function GET(request: Request, { params }: { params: { rm: string, 
 
     const aluno = dados.find((p) => p.rm === params.rm)
     if (!aluno) {
-        return NextResponse.json({ mensagem: "Não foi possível encontrar o aluno." }), { status: 404 };
+        return NextResponse.json({ mensagem: "Não foi possível encontrar o aluno." }, { status: 404 });
     }
 
     const prova = aluno.provas.find((p) => p.idProva == params.idProva)
 
     if (!prova) {
-        return NextResponse.json({ mensagem: "Não foi possível encontrar a disciplina." }), { status: 404 };
+        return NextResponse.json({ mensagem: "Não foi possível encontrar a disciplina." }, { status: 404 });
     }
 
 
@@ -29,7 +29,7 @@ export async function PUT(request: Request, { params }: { params: { rm: string, 
 
     const aluno = dados.find((p) => p.rm === params.rm)
     if (!aluno) {
-        return NextResponse.json({ mensagem: "Não foi possível encontrar o aluno." }), { status: 404 };
+        return NextResponse.json({ mensagem: "Não foi possível encontrar o aluno." }, { status: 404 });
     }
 
     const { semestre, avaliacao, disciplina, nota, data, feedback, descricao } = await request.json();
