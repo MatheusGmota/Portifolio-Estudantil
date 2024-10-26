@@ -22,7 +22,12 @@ export default function Editar({ params }: { params: { rm: string, idProva: numb
 
     useEffect(() => {
         const chamadaApi = async () => {
-            const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/editar-prova/${params.idProva}`, {mode: 'no-cors'})
+            const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/editar-prova/${params.idProva}`, {
+                headers: {
+                    'Access-Control-Allow-Origin': "*"
+                },
+                mode:'no-cors'
+            })
             const data = await response.json()
 
             setProva(data)

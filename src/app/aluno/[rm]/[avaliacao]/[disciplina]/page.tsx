@@ -21,8 +21,8 @@ export default function Provas({ params }: { params: { rm: string, avaliacao: st
             const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/${params.avaliacao}/${params.disciplina}`, {
                 headers: {
                     'Access-Control-Allow-Origin': "*"
-                }, 
-                mode: 'no-cors'
+                },
+                mode:'no-cors'
             })
             
             if (!response.ok) {

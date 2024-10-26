@@ -8,19 +8,26 @@ import { motion } from "framer-motion";
 
 export default function Home() {
 
-  const [alunos, setAlunos] = useState<TipoAluno[]>([]);
-  
-  useEffect(() => {
-    const chamadaApi = async ()=>{
-      const response = await fetch(`http://localhost:3000/api/base-alunos`, {mode: 'no-cors'})
-      if(response.ok){
-        const data = await response.json();
-        setAlunos(data);
+    const [alunos, setAlunos] = useState<TipoAluno[]>([]);
+    
+    useEffect(() => {
+      const chamadaApi = async ()=>{
+        const response = await fetch(`http://localhost:3000/api/base-alunos`, {
+          headers: {
+              'Access-Control-Allow-Origin': "*"
+          },
+          mode:'no-cors'
+      })
+
+        if(response.ok){
+          const data = await response.json();
+          setAlunos(data);
+        }
       }
-    }
-    chamadaApi();
-  },[])
-  return (
+      chamadaApi();
+    },[])
+
+    return (
     <>
       <main>
         <motion.div  initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ ease: "easeInOut", duration: 0.7 }} className="pagina-inicial">
@@ -66,5 +73,5 @@ export default function Home() {
         </motion.div>
       </main>
     </>
-  );
+    );
 }
