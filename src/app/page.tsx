@@ -12,7 +12,7 @@ export default function Home() {
   
   useEffect(() => {
     const chamadaApi = async ()=>{
-      const response = await fetch(`http://localhost:3000/api/base-alunos`)
+      const response = await fetch(`http://localhost:3000/api/base-alunos`, {mode: 'no-cors'})
       if(response.ok){
         const data = await response.json();
         setAlunos(data);

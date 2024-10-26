@@ -35,7 +35,8 @@ export default function Adicionar({ params }: { params: { rm: string } }) {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify(prova)
+                body: JSON.stringify(prova),
+                mode:'no-cors'
             })
 
             if (response.ok) {

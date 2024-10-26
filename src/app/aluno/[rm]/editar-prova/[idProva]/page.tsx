@@ -22,7 +22,7 @@ export default function Editar({ params }: { params: { rm: string, idProva: numb
 
     useEffect(() => {
         const chamadaApi = async () => {
-            const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/editar-prova/${params.idProva}`)
+            const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/editar-prova/${params.idProva}`, {mode: 'no-cors'})
             const data = await response.json()
 
             setProva(data)
@@ -45,7 +45,8 @@ export default function Editar({ params }: { params: { rm: string, idProva: numb
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify(prova)
+                body: JSON.stringify(prova),
+                mode:'no-cors'
             })
 
             if (response.ok) {
