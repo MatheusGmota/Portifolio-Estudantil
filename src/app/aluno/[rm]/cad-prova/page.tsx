@@ -33,7 +33,8 @@ export default function Adicionar({ params }: { params: { rm: string } }) {
             const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/cad-prova`, {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    'Access-Control-Allow-Origin': "*"
                 },
                 body: JSON.stringify(prova),
                 mode:'no-cors'

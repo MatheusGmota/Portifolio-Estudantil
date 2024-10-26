@@ -43,7 +43,8 @@ export default function Editar({ params }: { params: { rm: string, idProva: numb
             const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/editar-prova/${params.idProva}`, {
                 method: "PUT",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    'Access-Control-Allow-Origin': "*"
                 },
                 body: JSON.stringify(prova),
                 mode:'no-cors'

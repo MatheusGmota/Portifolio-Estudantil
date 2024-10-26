@@ -18,7 +18,12 @@ export default function Provas({ params }: { params: { rm: string, avaliacao: st
 
     useEffect(() => {
         const chamadaApi = async () => {
-            const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/${params.avaliacao}/${params.disciplina}`, {mode: 'no-cors'})
+            const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/${params.avaliacao}/${params.disciplina}`, {
+                headers: {
+                    'Access-Control-Allow-Origin': "*"
+                }, 
+                mode: 'no-cors'
+            })
             
             if (!response.ok) {
                 alert(`Erro na requisição. Status: ${response.status}`)
