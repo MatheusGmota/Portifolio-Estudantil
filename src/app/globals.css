@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Noto Sans, sans-serif;
-}
-
 @layer components {
   .pagina-inicial{
     @apply p-16 flex flex-col space-y-24;
