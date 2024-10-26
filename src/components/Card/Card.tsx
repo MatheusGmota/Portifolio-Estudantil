@@ -6,7 +6,7 @@ export default function Card({aluno} : {aluno: TipoAluno} ) {
   return (
     <>
         <div className="relative flex w-80 h-[400px] flex-col justify-between rounded-xl bg-gray-800 bg-clip-border text-gray-700 shadow-md">
-            <Image alt={`foto do ${aluno.nome}`} src={aluno.img} width={90} height={90} className="relative h-auto w-auto mx-4 -mt-10 self-center overflow-hidden rounded-full text-white shadow-lg shadow-blue-gray-500/40 bg-black" />
+            <Image alt={`foto do ${aluno.nome}`} src={aluno.img} width={130} height={130} className="relative h-auto w-auto mx-4 -mt-10 self-center overflow-hidden rounded-full text-white shadow-lg shadow-blue-gray-500/40 bg-black" />
             <div className="flex flex-col p-6 items-center">
                 <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-white antialiased text-center">
                 {aluno.nome}

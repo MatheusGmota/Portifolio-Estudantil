@@ -4,7 +4,7 @@ export default function AlunoLayout({ children, }: Readonly<{ children: React.Re
     return (
         <div className="flex">
             <BarraLateral />
-            <main className="grid content-center w-full p-6">
+            <main className="mt-52 md:grid md:content-center md:w-full md:p-6 md:mt-0">
                 {children}
             </main>
         </div>

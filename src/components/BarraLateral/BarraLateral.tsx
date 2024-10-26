@@ -33,7 +33,7 @@ export default function BarraLateral() {
             <section key={aluno.rm} className='wrapper-aluno'>
                 <article>
                     <div className='aluno'>
-                        <Image src={aluno.img} width={140} height={140} alt={`foto de ${aluno.nome}`} className='rounded-full m-2' />
+                        <Image src={aluno.img} width={140} height={140} alt={`foto de ${aluno.nome}`} className='md:rounded-full md:m-2 hidden md:block' />
                         <h3 className='text-center'>
                             {aluno.nome}
                         </h3>
@@ -44,10 +44,10 @@ export default function BarraLateral() {
                         <p>Curso - {aluno.curso}</p>
                     </div>
                 </article>
-                <div>
+                <div className='text-center my-1 underline'>
                     <Link href={`/aluno/${rm}/cad-prova`}>Adicionar Prova</Link>
                 </div>
-                <div>
+                <div className='text-center my-1 underline'>
                     <Link href={"/"}>Voltar Página Principal</Link>
                 </div>
             </section>
