@@ -20,10 +20,42 @@ body {
 		& .dados{
 			@apply text-sm flex flex-col items-center m-2;
 		  	& p{
-				@apply m-2 text-center
+				@apply m-2 text-center;
 		  	}
 		}
 	}
+
+	.form-adicionar {
+        @apply grid grid-cols-2 gap-5;
+        & section {
+            @apply flex items-center justify-between gap-10;
+        }
+        & div {
+            @apply w-full;
+        }
+        & div label{
+            @apply block text-base font-normal;
+        }
+        & div input, div select{
+            @apply border border-gray-700 p-2 rounded-lg w-64 outline-pink-500;
+        }
+    }
+
+	.form-editar {
+        @apply flex flex-col gap-5;
+        & section {
+            @apply flex items-center justify-between gap-10;
+        }
+        & div {
+            @apply w-full;
+        }
+        & div label{
+            @apply block text-base font-normal;
+        }
+        & div input, div select{
+            @apply border border-gray-700 p-2 rounded-lg w-64 outline-pink-500;
+        }
+    }
 	
 	.page-alunos{
 		@apply grid grid-cols-3 gap-14 m-6 ;
@@ -35,7 +67,7 @@ body {
 		  	& div{
 				@apply gap-2 flex flex-col content-center divide-y divide-solid;
 				& a{
-			  		@apply flex content-center py-2 justify-between mx-4 font-bold hover:bg-gray-500 hover:text-white
+			  		@apply flex content-center py-2 justify-between mx-4 font-bold hover:bg-gray-500 hover:text-white;
 				}
 		  	}
 		}

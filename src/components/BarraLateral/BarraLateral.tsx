@@ -48,7 +48,7 @@ export default function BarraLateral() {
                     <Link href={`/aluno/${rm}/cad-prova`}>Adicionar Prova</Link>
                 </div>
                 <div>
-                    <Link href={"/"}>Voltar</Link>
+                    <Link href={"/"}>Voltar Página Principal</Link>
                 </div>
             </section>
 

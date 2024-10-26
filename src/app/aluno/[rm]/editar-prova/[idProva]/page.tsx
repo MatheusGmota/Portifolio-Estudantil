@@ -1,6 +1,7 @@
 'use client'
 
 import { TipoProva } from "@/types"
+import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 
@@ -68,7 +69,7 @@ export default function Editar({ params }: { params: { rm: string, idProva: numb
     }
 
     return (
-        <div className="flex items-center justify-center">
+        <div className="flex flex-col gap-10 items-center justify-center">
             <section className="flex flex-col items-center max-w-xl gap-5 p-8 rounded-lg shadow-2xl">
                 <h1 className="font-bold text-2xl antialiased">Editar Avaliação</h1>
                 <p>{prova.disciplina}</p>
@@ -150,6 +151,9 @@ export default function Editar({ params }: { params: { rm: string, idProva: numb
                         <button className="botao bg-slate-800 text-white w-full" type="submit">Editar</button>
                     </section>
                 </form>
+            </section>
+            <section>
+                <Link href={`/aluno/${params.rm}`} className="botao my-10 px-4 text-base">Voltar</Link>
             </section>
         </div>
     )
