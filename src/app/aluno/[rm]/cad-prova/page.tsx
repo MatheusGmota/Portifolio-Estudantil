@@ -30,7 +30,7 @@ export default function Adicionar({ params }: { params: { rm: string } }) {
     const handleSubmit = async () => {
         try {
 
-            const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/cad-prova`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_URL_PROVAS as string}/${params.rm}/cad-prova`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

@@ -12,7 +12,7 @@ export default function Home() {
   
   useEffect(() => {
     const chamadaApi = async ()=>{
-      const response = await fetch(`http://localhost:3000/api/base-alunos`)
+      const response = await fetch(process.env.NEXT_PUBLIC_URL_ALUNOS as string)
       if(response.ok){
         const data = await response.json();
         setAlunos(data);
@@ -24,34 +24,34 @@ export default function Home() {
     <>
       <main>
         <motion.div  initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ ease: "easeInOut", duration: 0.7 }} className="pagina-inicial">
-          <h1 className="titulo">
+          <h1 className="text-black text-4xl font-bold text-center mb-12">
               Portfólio Estudantil
           </h1>
           <section className="area">
               
-              <article className="box">
-                  <h2 className="sub-titulos">
+              <article className="p-5 box">
+                  <h2 className="text-black text-4xl font-semibold mb-4">
                       Checkpoint ( CPS )
                   </h2>
-                  <p className="texto">
+                  <p className="text-base text-gray-600">
                       Avaliações intermediárias para acompanhamento do progresso.
                   </p>
               </article>
 
-              <article className="box">
-                  <h2 className="sub-titulos">
+              <article className="p-5 box">
+                  <h2 className="text-black text-4xl font-semibold mb-4">
                       Global Solutions ( GS )
                   </h2>
-                  <p className="texto">
+                  <p className="text-base text-gray-600">
                       Projetos ou avaliações integradoras, que envolvem a aplicação global dos conhecimentos adquiridos.
                   </p>
               </article>
 
-              <article className="box">
-                  <h2 className="sub-titulos">
+              <article className="p-5 box">
+                  <h2 className="text-black text-4xl font-semibold mb-4">
                       Challenge Sprints
                   </h2>
-                  <p className="texto">
+                  <p className="text-base text-gray-600">
                       Avaliações em formato de desafios, com foco em resolução de problemas com entregas programadas.
                   </p>
               </article>

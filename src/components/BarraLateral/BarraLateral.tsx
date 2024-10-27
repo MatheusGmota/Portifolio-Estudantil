@@ -20,10 +20,9 @@ export default function BarraLateral() {
 
     useEffect(() => {
         const chamadaApi = async () => {
-            const response = await fetch(`http://localhost:3000/api/base-alunos/${rm}`);
+            const response = await fetch(`${process.env.NEXT_PUBLIC_URL_ALUNOS as string}/${rm}`);
             const data = await response.json();
             setAluno(data);
-            console.log(data + "sim")
         }
         chamadaApi();
     }, [rm])

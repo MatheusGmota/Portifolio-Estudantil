@@ -22,7 +22,7 @@ export default function Editar({ params }: { params: { rm: string, idProva: numb
 
     useEffect(() => {
         const chamadaApi = async () => {
-            const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/editar-prova/${params.idProva}`)
+            const response = await fetch(`${process.env.NEXT_PUBLIC_URL_PROVAS as string}/${params.rm}/editar-prova/${params.idProva}`)
             const data = await response.json()
 
             setProva(data)
@@ -40,7 +40,7 @@ export default function Editar({ params }: { params: { rm: string, idProva: numb
     const handleSubmit = async () => {
         try {
 
-            const response = await fetch(`http://localhost:3000/api/base-provas/${params.rm}/editar-prova/${params.idProva}`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_URL_PROVAS as string}/${params.rm}/editar-prova/${params.idProva}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
@@ -69,8 +69,8 @@ export default function Editar({ params }: { params: { rm: string, idProva: numb
     }
 
     return (
-        <div className="flex flex-col gap-10 items-center justify-center">
-            <section className="flex flex-col items-center max-w-xl gap-5 p-8 rounded-lg shadow-2xl">
+        <div className="flex flex-col items-center justify-center ">
+            <section className="flex flex-col items-center max-w-xl gap-5 p-8 rounded-lg shadow-2xl mx-4">
                 <h1 className="font-bold text-2xl antialiased">Editar Avaliação</h1>
                 <p>{prova.disciplina}</p>
                 <form onSubmit={handleSubmit} className="form-editar">
@@ -153,7 +153,7 @@ export default function Editar({ params }: { params: { rm: string, idProva: numb
                 </form>
             </section>
             <section>
-                <Link href={`/aluno/${params.rm}`} className="botao my-10 px-4 text-base">Voltar</Link>
+                <Link href={`/aluno/${params.rm}`} className="botao">Voltar</Link>
             </section>
         </div>
     )
