@@ -32,12 +32,12 @@ npm run build
 
 ## Funcionalidades
 
-* **Orçamento:**
-    Permite ao usuário  e editar um formulário para um sistema estudantil, possuindo 3 tipos de prova e cada tipo de avaliação possuindo quantidade de provas específicas
+* Permite ao usuário  e editar um formulário para um sistema estudantil, possuindo 3 tipos de prova e cada tipo de avaliação possuindo quantidade de provas específicas
 
 ## Integrantes 
 * Felipe Seiki Hashiguti - RM 98985
 * Lucas Corradini Silveira - RM 555118
 * Matheus Gregorio Mota - RM 557254
 
-
+* Link do deploy
+  [https://portifolio-estudantil.vercel.app/](https://portifolio-estudantil.vercel.app/)
