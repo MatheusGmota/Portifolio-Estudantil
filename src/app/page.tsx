@@ -11,15 +11,14 @@ export default function Home() {
   const [alunos, setAlunos] = useState<TipoAluno[]>([]);
   
   useEffect(() => {
-    const chamadaApi = async ()=>{
+    const chamadaApi = async () => {
       const response = await fetch(process.env.NEXT_PUBLIC_URL_ALUNOS as string)
-      if(response.ok){
-        const data = await response.json();
-        setAlunos(data);
-      }
-      chamadaApi();
+      const data = await response.json()
+
+      setAlunos(data);
     }
-  },[])
+    chamadaApi()
+  }, [])
 
     return (
     <>
