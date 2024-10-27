@@ -33,9 +33,11 @@ export default function Adicionar({ params }: { params: { rm: string } }) {
             const response = await fetch(`${process.env.NEXT_PUBLIC_URL_PROVAS as string}/${params.rm}/cad-prova`, {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    'Access-Control-Allow-Origin': "*"
                 },
-                body: JSON.stringify(prova)
+                body: JSON.stringify(prova),
+                mode:'no-cors'
             })
 
             if (response.ok) {

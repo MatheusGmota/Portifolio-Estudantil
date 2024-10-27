@@ -17,10 +17,11 @@ export default function Home() {
         const data = await response.json();
         setAlunos(data);
       }
+      chamadaApi();
     }
-    chamadaApi();
   },[])
-  return (
+
+    return (
     <>
       <main>
         <motion.div  initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ ease: "easeInOut", duration: 0.7 }} className="pagina-inicial">
@@ -66,5 +67,5 @@ export default function Home() {
         </motion.div>
       </main>
     </>
-  );
+    );
 }

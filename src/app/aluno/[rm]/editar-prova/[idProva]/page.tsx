@@ -43,9 +43,11 @@ export default function Editar({ params }: { params: { rm: string, idProva: numb
             const response = await fetch(`${process.env.NEXT_PUBLIC_URL_PROVAS as string}/${params.rm}/editar-prova/${params.idProva}`, {
                 method: "PUT",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    'Access-Control-Allow-Origin': "*"
                 },
-                body: JSON.stringify(prova)
+                body: JSON.stringify(prova),
+                mode:'no-cors'
             })
 
             if (response.ok) {
